@@ -23,9 +23,14 @@ function displayResults(weather) {
   let city = document.querySelector('.location .city');
   city.innerText = `${weather.name}, ${weather.sys.country}`;
 
+
+  // let tme = new Date()
+
   let now = new Date();
   let date = document.querySelector('.location .date');
   date.innerText = dateBuilder(now);
+
+  // let time = document.getElementById('tm').innerHTML = tme;
 
   let temp = document.querySelector('.current .temp');
   temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
@@ -42,9 +47,15 @@ function dateBuilder(d) {
   let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
   let day = days[d.getDay()];
+  // let time = tme.getTime();
   let date = d.getDate();
   let month = months[d.getMonth()];
   let year = d.getFullYear();
 
-  return `${day} ${date} ${month} ${year}`;
+  return `${day} ${date}  ${month} ${year}`;
+}
+
+
+if ('serviceworker', navigator) {
+  console.log('serviceworker supported')
 }
