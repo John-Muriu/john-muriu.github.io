@@ -56,6 +56,6 @@ function dateBuilder(d) {
 }
 
 
-if ('serviceworker', navigator) {
-  console.log('serviceworker supported')
-}
+// if ('serviceworker', navigator) {
+//   console.log('serviceworker supported')
+// }

@@ -6,7 +6,7 @@
 
 body {
   font-family: "montserrat", sans-serif;
-  background-image: url("bg.jpg");
+  /* background-image: url("bg.jpg"); */
   background-size: cover;
   background-position: top center;
 }
@@ -47,10 +47,9 @@ header input {
   padding: 10px 15px;
   border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 16px 0px 16px 0px;
-  border-bottom: 3px solid #df8e00;
+  background-color: rgba(255, 255, 255, 0.904);
 
+  border: 2px solid #df8e00;
   color: #313131;
   font-size: 20px;
   font-weight: 300;
@@ -58,7 +57,23 @@ header input {
 }
 
 header input:focus {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(20, 120, 136, 0.6);
+  color: white;
+}
+/* header input[type="text"]:hover {
+  font-size: 20px; */
+
+header input[type="text"] {
+  display: inline-block;
+  width: 500px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  /* border: 1px solid lightgray; */
+  border-radius: 16px 16px 16px 16px;
+  /* padding: 10px 10px 10px 100px; */
+  transition: all 0.1s ease-out;
+  color: #ffffff;
 }
 
 main {
