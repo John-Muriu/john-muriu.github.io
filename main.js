@@ -56,6 +56,13 @@ function dateBuilder(d) {
 }
 
 
-// if ('serviceworker', navigator) {
-//   console.log('serviceworker supported')
-// }
+if ('serviceworker', navigator) {
+  navigator.serviceWorker.register('sw.js').then(registration => {
+    console.log('w register');
+    console.log(registration);
+  }).catch(error => {
+    console.log('sw Registration Failed!');
+    console.log(error);
+  })
+
+}
