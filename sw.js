@@ -2,7 +2,7 @@ self.addEventListener('install', e => {
     // console.log('Install Weather App')
     e.waitUntil(
         caches.open('static').then(cache => {
-            return cache.addAll(["./", "/index.html", "/img/logo192.png"]);
+            return cache.addAll(["./", "/index.html", "/main.css", "/img/logo192.png"]);
         })
     );
 });
