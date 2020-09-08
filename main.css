@@ -19,6 +19,13 @@ body {
   min-height: 100vh;
 }
 
+div p {
+  color: chocolate;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
 .app-wrap {
   display: flex;
   flex-direction: column;
@@ -45,8 +52,7 @@ h1 {
   padding: 10px;
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.6)
+    /* rgba(0, 0, 0, 0.3), */ /* rgba(0, 0, 0, 0.6) */
   );
 }
 header input {
@@ -144,7 +150,7 @@ a {
     rgba(0, 0, 10, 0.3),
     rgba(0, 0, 0, 0.6)
   ); */
-  background-color: #6dcdb1;
+  background-color: #009578;
   color: #fff;
   text-align: center;
   justify-content: center;
