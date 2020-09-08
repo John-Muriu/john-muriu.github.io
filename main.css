@@ -48,12 +48,22 @@ header,
 h1 {
   display: flex;
   justify-content: center;
+  font-family: "Shadows Into Light", cursive;
   color: white;
   padding: 10px;
   background-image: linear-gradient(
     to bottom,
     /* rgba(0, 0, 0, 0.3), */ /* rgba(0, 0, 0, 0.6) */
   );
+}
+
+hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #009578;
+  margin: 1em 0;
+  padding: 0;
 }
 header input {
   width: 100%;
